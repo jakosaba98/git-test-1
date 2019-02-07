@@ -1,0 +1,23 @@
+Git usa comandi linux
+ls -a mostra cartelle (anche nascoste)
+
+
+cat git init		inizializza un nuovo repository all'interno della cartella corrente 
+			crea la sottocartela .git
+git status 		Mostra lo stato di git
+
+git add (+nome file) 	aggiunge il file selezionato
+git add .		aggiunge tutti i file nella cartella corrente
+commit 			memorizza lo snapshot, uploada il lavoro
+
+VIM:
+i	entrare in modalitÃ  inserimento
+:wq	salva ed esce
+
+Creare account git
+new repo git-test
+NO initialize README
+push			carica dati su github
+"git remote add origin https://github.com/nurban96/git-test.git"
+git remote -v 		mostra i remote configurati
+"git push -u origin master" chiede credenziali per accesso di github
