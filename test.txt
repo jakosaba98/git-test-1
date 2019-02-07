@@ -1,4 +1,5 @@
 Git usa comandi linux
+
 ls -a mostra cartelle (anche nascoste)
 
 
@@ -11,7 +12,7 @@ git add .		aggiunge tutti i file nella cartella corrente
 commit 			memorizza lo snapshot, uploada il lavoro
 
 VIM:
-i	entrare in modalitÃ  inserimento
+i	entrare in modalità  inserimento
 :wq	salva ed esce
 
 Creare account git
@@ -21,3 +22,35 @@ push			carica dati su github
 "git remote add origin https://github.com/nurban96/git-test.git"
 git remote -v 		mostra i remote configurati
 "git push -u origin master" chiede credenziali per accesso di github
+pull/fetch per scaricare i dati da github
+pull = fetch+merge
+
+			BRANCH:
+-master 
+	allineato con la versione online
+
+-develop
+	allineato con versione in sviluppo
+
+-topic
+	sviluppare feature, una volta finito si cancella il branch
+
+-hotfix
+	come topic, usato per cose molto più veloci
+
+
+		MERGE REQUEST
+-modo con il quale due o più sviluppatori collaborano assieme
+
+-lo sviluppatore sottopone la modifica al responsabile che sceglie di      applicarla o no
+
+-facilita la discussione(evidenzia le differenze e consente l'inserimento di commenti
+
+	Marco = "1"		Mauro = "2"
+
+"1" fa un fork del repo di "2"
+"1" clona il suo repo da GitHub in locale
+"1" crea branch "f1" contenente i commit delle funzionalità
+"1" "git push -u origin f1"
+"1" esegue merge request
+"2" valuta il codice di "1" e esegue/blocca il merge
